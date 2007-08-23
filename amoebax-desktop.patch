@@ -1,0 +1,18 @@
+--- amoebax-0.2.0/data/amoebax.desktop~	2007-08-23 17:38:27.344678464 +0200
++++ amoebax-0.2.0/data/amoebax.desktop	2007-08-23 17:38:01.503006874 +0200
+@@ -1,10 +1,13 @@
+ [Desktop Entry]
+ Categories=Game;LogicGame;
+-Comment=Defeat your opponent by filling up their grid up with garbage.
++Comment=Cute and addictive puzzle game
++Comment[pl]=Ładna i uzależniająca gra logiczna
+ Encoding=UTF-8
+ Exec=amoebax
+ GenericName=Computer Puzzle Game
+-Icon=amoebax.svg
++GenericName[pl]=Komputerowa gra logiczna
++Icon=amoebax.png
+ Name=Amoebax
+ Terminal=false
+ Type=Application
++# vi: encoding=utf-8
