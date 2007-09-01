@@ -25,9 +25,9 @@ world if you can't stop them. Fortunately the mutation made then too
 unstable and lining up four or more will make them disappear.
 
 %description -l pl.UTF-8
-Amoebax jest ładną i uzależniającą grą loginczą. W wyniku straszliwej
+Amoebax jest ładną i uzależniającą grą logiczną. W wyniku straszliwej
 mutacji pewien gatunek ameby zaczął się rozmnażać i może opanować
-świat jeśli go nie powstrzymasz. Naszczęsćie mutacja jest bardzo
+świat jeśli gracz go nie powstrzyma. Na szczęście mutacja jest bardzo
 niestabilna i połączenie czterech lub więcej osobników tego samego
 typu powoduje ich znikanie.
 
