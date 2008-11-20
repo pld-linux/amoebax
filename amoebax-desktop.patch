@@ -11,7 +11,7 @@
  GenericName=Computer Puzzle Game
 -Icon=amoebax.svg
 +GenericName[pl]=Komputerowa gra logiczna
-+Icon=amoebax.png
++Icon=amoebax.svg
  Name=Amoebax
  Terminal=false
  Type=Application
