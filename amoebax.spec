@@ -8,6 +8,7 @@ Group:		X11/Applications/Games
 Source0:	http://www.emma-soft.com/games/amoebax/download/%{name}-%{version}.tar.bz2
 # Source0-md5:	f144e4a42f4443e6c105976c4c036c50
 Patch0:		%{name}-desktop.patch
+Patch1:		%{name}-useless_files.patch
 URL:		http://www.emma-soft.com/games/amoebax/
 BuildRequires:	SDL-devel >= 1.2.11
 BuildRequires:	SDL_image-devel >= 1.2.5
@@ -34,6 +35,7 @@ typu powoduje ich znikanie.
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
 
 %build
 %configure
