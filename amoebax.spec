@@ -1,12 +1,12 @@
 Summary:	Cute and addictive puzzle game
 Summary(pl.UTF-8):	Ładna i uzależniająca gra logiczna
 Name:		amoebax
-Version:	0.2.0
+Version:	0.2.1
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications/Games
 Source0:	http://www.emma-soft.com/games/amoebax/download/%{name}-%{version}.tar.bz2
-# Source0-md5:	1fecc5e4c8c4151b39f84baa5a18897b
+# Source0-md5:	f144e4a42f4443e6c105976c4c036c50
 Patch0:		%{name}-desktop.patch
 URL:		http://www.emma-soft.com/games/amoebax/
 BuildRequires:	SDL-devel >= 1.2.11
@@ -41,11 +41,13 @@ typu powoduje ich znikanie.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install data/%{name}.png $RPM_BUILD_ROOT%{_pixmapsdir}
+install data/%{name}.svg $RPM_BUILD_ROOT%{_pixmapsdir}
+install data/%{name}.desktop $RPM_BUILD_ROOT%{_desktopdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -57,4 +59,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/%{name}
 %{_mandir}/man6/*.6*
 %{_desktopdir}/%{name}.desktop
-%{_pixmapsdir}/%{name}.png
+%{_pixmapsdir}/%{name}.svg
