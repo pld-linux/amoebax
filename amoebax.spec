@@ -13,6 +13,8 @@ URL:		http://www.emma-soft.com/games/amoebax/
 BuildRequires:	SDL-devel >= 1.2.11
 BuildRequires:	SDL_image-devel >= 1.2.5
 BuildRequires:	SDL_mixer-devel >= 1.2.7
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	libogg-devel
 BuildRequires:	libpng-devel
 BuildRequires:	libvorbis-devel
@@ -38,6 +40,9 @@ typu powoduje ich znikanie.
 %patch1 -p1
 
 %build
+%{__aclocal} -I m4
+%{__autoconf}
+%{__automake}
 %configure
 %{__make}
 
