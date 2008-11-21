@@ -1,40 +1,12 @@
---- amoebax-0.2.1/data/Makefile.in~	2008-11-20 16:49:20.000000000 +0100
-+++ amoebax-0.2.1/data/Makefile.in	2008-11-20 16:49:10.000000000 +0100
-@@ -97,11 +97,6 @@
- # Process this file with automake to produce a Makefile.in file
- SUBDIRS = AmoebaxMain.nib dlls fonts graphics music sfx
- EXTRA_DIST = \
--	amoebax.desktop	\
--	Amoebax.icns	\
--	amoebax.ico	\
--	amoebax.png	\
--	amoebax.svg	\
- 	Amoebax.url	\
- 	amoebax.wxs	\
- 	bannrbmp.bmp	\
-@@ -114,11 +109,6 @@
- MAN_PAGES = amoebax.6
- INSTALL_MAN_PAGES = amoebax.6
+--- amoebax-0.2.1/doc/Makefile.am~	2008-08-02 12:09:45.000000000 +0200
++++ amoebax-0.2.1/doc/Makefile.am	2008-11-21 09:45:44.000000000 +0100
+@@ -8,9 +8,6 @@
  
--iconsdir = $(datarootdir)/pixmaps
--icons_DATA = amoebax.svg
--
--desktopdir = $(datarootdir)/applications
--desktop_DATA = amoebax.desktop
- subdir = data
- mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
- CONFIG_HEADER = $(top_builddir)/config.h
---- amoebax-0.2.1/doc/Makefile.in~	2008-08-02 12:10:51.000000000 +0200
-+++ amoebax-0.2.1/doc/Makefile.in	2008-11-20 16:50:05.000000000 +0100
-@@ -94,11 +94,6 @@
- am__quote = @am__quote@
- install_sh = @install_sh@
+ endif
  
--# Process this file with automake to produce a Makefile.in file
--EXTRA_DIST = manual.pdf manual.sla
--
 -manualdir = $(datarootdir)/doc/amoebax
 -manual_DATA = manual.pdf
- subdir = doc
- mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
- CONFIG_HEADER = $(top_builddir)/config.h
+-
+ clean-local:
+ 	rm -fr html
+ 
